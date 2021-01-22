@@ -7,7 +7,6 @@
         <methods>
           <include name="loginTest"/>
           <include name="init"/>
-          <include name="TearDown"/>
         </methods>
       </class> <!-- VAriousConcept.LearnTestNG -->
     </classes>

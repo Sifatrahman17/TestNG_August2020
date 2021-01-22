@@ -1,7 +1,8 @@
 
   package VAriousConcept;
   
-  import java.util.concurrent.TimeUnit;
+  import java.util.List;
+import java.util.concurrent.TimeUnit;
   
   import org.openqa.selenium.By; import org.openqa.selenium.WebDriver; import
   org.openqa.selenium.WebElement; import
@@ -34,10 +35,19 @@
   USERNAME_FIELD_ELEMENT.clear();
   USERNAME_FIELD_ELEMENT.sendKeys("demo@techfios.com");
   USERPASSWORD_FIELD_ELEMENT.sendKeys("abc123"); SIGNIN_BUTTON_ELEMENT.click();
+ 
+//  WebElement sel = driver.findElement(By.name("//select[@id='cid']"));
+//  List<WebElement> lists = sel.findElements(By.tagName("option"));
+//      for(WebElement element: lists)  
+//      {
+//          String var2 = element.getText();
+//          System.out.println(var2);
+//      }
   
   }
   
-  @AfterMethod public void TearDown() { 
+  @AfterMethod 
+  public void TearDown() { 
 	  driver.close(); 
 	  driver.quit(); }
   
